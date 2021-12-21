@@ -3,9 +3,8 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import './App.css';
 import Navbar from './components/NavBar';
-import Rockets from './components/Rockets';
+import Rockets from './components/rockets/Rockets';
 import MyProfile from './components/MyProfile';
 import Mission from './components/Missions';
 
