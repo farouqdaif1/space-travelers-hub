@@ -4,8 +4,8 @@ import {
   Routes,
 } from 'react-router-dom';
 import Navbar from './components/NavBar';
-import Rockets from './components/rockets/Rockets';
 import MyProfile from './components/MyProfile';
+import Rockets from './components/rockets/Rockets';
 import Mission from './components/Missions';
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Route exact path="/my-profile" element={<MyProfile />} />
       </Routes>
     </Router>
+
   );
 }
 
