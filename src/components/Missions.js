@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchMissions } from '../redux/missions/missions';
 
-function Mission(mission) {
+function Mission({ amission }) {
   return (
-    <tr key={mission.mission.missionId}>
-      <td>{mission.mission.missionName}</td>
-      <td className="m_d">{mission.mission.description}</td>
+    <tr key={amission.missionId}>
+      <td>{amission.missionName}</td>
+      <td className="m_d">{amission.description}</td>
       <td>
         <span className="status" style={{ textTransform: 'uppercase' }}>
           Not a member
@@ -20,6 +21,16 @@ function Mission(mission) {
     </tr>
   );
 }
+
+Mission.propTypes = {
+  amission: PropTypes.shape({
+    missionName: PropTypes.string,
+    amission: PropTypes.string,
+    missionId: PropTypes.string,
+    description: PropTypes.string,
+
+  }).isRequired,
+};
 
 const Missions = () => {
   const missionsList = useSelector((state) => state.missionsReducer);
@@ -40,7 +51,7 @@ const Missions = () => {
             <th>change</th>
           </tr>
           {missionsList.map((mission) => (
-            <Mission key={mission.mission_id} mission={mission} />
+            <Mission key={mission.mission_id} amission={mission} />
           ))}
         </tbody>
       </table>
