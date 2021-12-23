@@ -11,6 +11,9 @@ const Rocket = ({ rocket }) => {
       <div className="rocket-description">
         <h2>{rocket.rocket_name}</h2>
         <p>
+          {rocket.reserved && (
+            <span className="success-rocket">Reserved</span>
+          )}
           {rocket.description}
         </p>
         <div>
@@ -33,10 +36,10 @@ const Rocket = ({ rocket }) => {
                 type="button"
                 className="reserved-button"
                 onClick={
-              () => {
-                dispatch(cancleRocket(rocket.id));
-              }
-            }
+                  () => {
+                    dispatch(cancleRocket(rocket.id));
+                  }
+                }
               >
                 Cancel Reservation
               </button>
