@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { bookRocket, cancleRocket } from '../../redux/rockets/rocket';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
@@ -45,10 +43,11 @@ const Rocket = ({ rocket }) => {
               </button>
             )}
         </div>
+
       </div>
-    </li>
-  );
-};
+    </div>
+  </li>
+);
 Rocket.propTypes = {
   rocket: PropTypes.shape({
     id: PropTypes.number,
