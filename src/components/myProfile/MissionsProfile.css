@@ -1,5 +1,5 @@
 .mission-profile {
-   display: flex;
+  display: flex;
   justify-content: center;
   width: 50%;
   margin-right: 20px;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-ul {  
+ul {
   border-collapse: collapse;
   width: 100%;
   padding: 0;
@@ -27,4 +27,3 @@ ul {
   align-items: center;
   padding-left: 10px;
 }
-

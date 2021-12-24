@@ -107,7 +107,7 @@ const Missions = () => {
   return (
     <div>
       <h1>Mission Page </h1>
-      <table>
+      <table className="mission-table">
         <tbody>
           <tr>
             <th>Mission</th>

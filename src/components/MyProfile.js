@@ -8,6 +8,6 @@ const MyProfile = () => (
     <MissionsProfile />
     <RenderBookedRocket />
   </div>
-  );
+);
 
 export default MyProfile;
