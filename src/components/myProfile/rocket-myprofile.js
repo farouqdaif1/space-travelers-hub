@@ -6,12 +6,12 @@ const RenderBookedRocket = () => {
   return (
     <div>
       <h2>My Rockets</h2>
-      <table>
+      <table className="rocket-profile-table">
         <tbody>
           {
             rockets.rocketsReducer.map((rocket) => (
               rocket.reserved
-              && (<tr key={rocket.id}><td>{rocket.rocket_name}</td></tr>)
+              && (<tr key={rocket.id}><td className="rocket-td">{rocket.rocket_name}</td></tr>)
             ))
           }
         </tbody>

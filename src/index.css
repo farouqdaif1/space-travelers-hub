@@ -125,18 +125,23 @@ nav {
   -o-border-radius: 5%;
 }
 
-table,
-td {
+.rocket-profile-table,
+.rocket-td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 4%;
 }
 
-table {
+.rocket-profile-table {
   width: 40%;
   border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
+}
+
+.mission-table {
+  width: 90%;
+  padding: 0;
 }
