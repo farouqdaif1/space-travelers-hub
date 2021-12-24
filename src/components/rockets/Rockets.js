@@ -11,7 +11,7 @@ const Rockets = () => {
   }, [dispatch]);
   return (
     <div>
-      <ul>
+      <ul className="rocket-list">
         {
           rockets.rocketsReducer.map((rocket) => (
             <Rocket key={rocket.id} rocket={rocket} />

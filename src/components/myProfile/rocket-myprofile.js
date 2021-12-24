@@ -5,15 +5,15 @@ const RenderBookedRocket = () => {
   const rockets = useSelector((state) => state);
   return (
     <div>
+      <h2>My Rockets</h2>
       <table>
-        <caption>My Rockets</caption>
         <tbody>
           {
-                        rockets.rocketsReducer.map((rocket) => (
-                          rocket.reserved
-                            && (<tr key={rocket.id}><td>{rocket.rocket_name}</td></tr>)
-                        ))
-                    }
+            rockets.rocketsReducer.map((rocket) => (
+              rocket.reserved
+              && (<tr key={rocket.id}><td>{rocket.rocket_name}</td></tr>)
+            ))
+          }
         </tbody>
       </table>
     </div>
