@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component Test Renders NavBar 1`] = `
+<nav>
+  <div
+    id="site-header"
+  >
+    <img
+      alt="Logo"
+      className="logo"
+      src="logo.png"
+    />
+    <h2>
+      Space Travelers' Hub
+    </h2>
+  </div>
+  <ul
+    className="site-links"
+  >
+    <li>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li
+      className="mission-link"
+    >
+      <a
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        href="/my-profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

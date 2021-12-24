@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Slab&display=swap');
+
+:root {
+  --main-bg-color: #fff;
+  --place-color: #c4c4c4;
+}
+
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-bottom: 1px solid var(--place-color);
+}
+
+#site-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.site-links {
+  list-style: none;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-links a {
+  text-decoration: none;
+  color: #0290ff;
+  cursor: pointer;
+}
+
+.site-links a:active {
+  text-decoration: underline;
+  color: #0290ff;
+}
+
+.rocket-list {
+  list-style: none;
+}
+
+.rocket-list li {
+  display: flex;
+  margin-bottom: 30px;
+  height: 25%;
+}
+
+.rocket-list li img {
+  width: 300px;
+  height: 250px;
+}
+
+.rocket-description {
+  padding: 2%;
+  line-height: 150%;
+}
+
+.available-button {
+  border: none;
+  outline: none;
+  width: 160px;
+  padding: 16px;
+  color: #fff;
+  background-color: #0290ff;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.reserved-button {
+  border-color: var(--place-color);
+  outline: none;
+  width: 160px;
+  padding: 16px;
+  color: var(--place-color);
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.success-rocket {
+  color: #fff;
+  background-color: #0290ff;
+  font-size: 13px;
+  font-weight: bold;
+  width: 15px;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.rocket-profile-table,
+.rocket-td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 4%;
+}
+
+.rocket-profile-table {
+  width: 100%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.mission-table {
+  width: 95%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+.missions-tr:nth-child(2n) {
+  background-color: #e8e8e8;
+}
+
+.missions-td,
+.missions-th {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.btn-join-mission,
+.btn-leave-mission,
+.status,
+.status_2 {
+  white-space: nowrap;
+}
+
+.btn-join-mission,
+.btn-leave-mission {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+}
+
+.btn-join-mission {
+  border-color: gray;
+  color: gray;
+}
+
+.btn-leave-mission {
+  border-color: red;
+  color: red;
+}
+
+.status,
+.status_2 {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 6px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+}
+
+.status {
+  background-color: grey;
+}
+
+.status_2 {
+  background-color: #0290ff;
+}
