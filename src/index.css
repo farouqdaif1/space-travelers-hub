@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Slab&display=swap');
 
 :root {
   --main-bg-color: #fff;
@@ -11,12 +11,11 @@
 }
 
 body {
-  width: 100%;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--main-bg-color);
 }
 
@@ -133,7 +132,7 @@ nav {
 }
 
 .rocket-profile-table {
-  width: 40%;
+  width: 100%;
   border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
@@ -142,6 +141,63 @@ nav {
 }
 
 .mission-table {
-  width: 90%;
-  padding: 0;
+  width: 95%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+.missions-tr:nth-child(2n) {
+  background-color: #e8e8e8;
+}
+
+.missions-td,
+.missions-th {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.btn-join-mission,
+.btn-leave-mission,
+.status,
+.status_2 {
+  white-space: nowrap;
+}
+
+.btn-join-mission,
+.btn-leave-mission {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+}
+
+.btn-join-mission {
+  border-color: gray;
+  color: gray;
+}
+
+.btn-leave-mission {
+  border-color: red;
+  color: red;
+}
+
+.status,
+.status_2 {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 6px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+}
+
+.status {
+  background-color: grey;
+}
+
+.status_2 {
+  background-color: #0290ff;
 }

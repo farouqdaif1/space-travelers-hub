@@ -17,7 +17,7 @@ function Mission({
     const btn = e.target.className;
     const { id } = e.target;
 
-    if (btn === 'state') {
+    if (btn === 'btn-join-mission') {
       dispatch(joinMission(id));
       dispatch(updateStatus(id));
       let arr = [];
@@ -41,7 +41,7 @@ function Mission({
         });
       }
       localStorage.setItem('statusData', JSON.stringify(arr));
-    } else if (btn === 'state_2') {
+    } else if (btn === 'btn-leave-mission') {
       dispatch(leaveMission(id));
       dispatch(updateStatus(id));
       const arr1 = JSON.parse(localStorage.getItem('statusData'));
@@ -57,7 +57,7 @@ function Mission({
         <button
           type="button"
           id={id}
-          className="state"
+          className="btn-join-mission"
           onClick={eventHandler}
         >
           Join Mission
@@ -68,7 +68,7 @@ function Mission({
       <button
         type="button"
         id={id}
-        className="state_2"
+        className="btn-leave-mission"
         onClick={eventHandler}
       >
         Leave Mission
@@ -77,13 +77,13 @@ function Mission({
   }
 
   return (
-    <tr key={id} id={id}>
-      <td>{missionName}</td>
-      <td className="m_d">{description}</td>
-      <td>
+    <tr key={id} id={id} className="missions-tr">
+      <td className="missions-td">{missionName}</td>
+      <td className="missions-td">{description}</td>
+      <td className="missions-td">
         <p className={Bg}>{status}</p>
       </td>
-      <td>{addBTN(joined)}</td>
+      <td className="missions-td">{addBTN(joined)}</td>
     </tr>
   );
 }
@@ -106,14 +106,13 @@ const Missions = () => {
   }, [dispatch]);
   return (
     <div>
-      <h1>Mission Page </h1>
       <table className="mission-table">
         <tbody>
           <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>change</th>
+            <th className="missions-th">Mission</th>
+            <th className="missions-th">Description</th>
+            <th className="missions-th">Status</th>
+            <th className="missions-th">change</th>
           </tr>
           {missionsList.map((mission) => (
             <Mission
