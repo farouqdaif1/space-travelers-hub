@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 const RenderBookedRocket = () => {
   const rockets = useSelector((state) => state);
   return (
-    <div>
+    <div className="rocket-profile">
       <h2>My Rockets</h2>
       <table className="rocket-profile-table">
         <tbody>
