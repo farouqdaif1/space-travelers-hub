@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../Redux/configureStore';
+import store from '../redux/configureStore';
 import Navbar from '../Components/Navbar';
 
 describe('Navbar Component Test', () => {
