@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 Clone the project by using terminal:
 
 ```
-git clone https://github.com/adamteddychang/space-travelers.git
+git clone https://github.com/farouqdaif1/space-travelers-hub.git
 ```
 
 cd into the directory:
