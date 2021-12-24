@@ -61,8 +61,6 @@ npm run test
 - Code Editor.
 - Web Browser.
 
-- Web Browser.
-
 ## Authors
 
 :man: **Farouq Daif**

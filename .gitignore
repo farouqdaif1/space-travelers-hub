@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#curriculum-tools-copy-projects
+/curriculum-tools-copy-projects
+
 # production
 /build
 
