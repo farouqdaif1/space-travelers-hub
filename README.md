@@ -4,14 +4,14 @@
 
 > This project is for space rockets and missions. You can see available rockets and missions to reserve or join. The project built by using JavaScript, React, Redux,
 Kanban Boards, CSS.
-![image]()
-![image]()
+![screenshot](https://netlify-cocoon.netlify.app/.netlify/functions/fetch?code=307&path=eyJzaXRlX2lkIjoiY2M1MjA4NDktZjNiZS00OGY0LWEzNTctYzgzYjU5M2I3ZTllIiwiZGVwbG95X2lkIjoiNjFjNWM2NmQ2MzllYTAwMDA4NmNlZTUyIiwiaWQiOiI4Y2Q1ZGNiYS0wNTMwLTQ5ZmQtYmU2MC1kYzNkMDY3ZjExNDMifQ==)
+![screenshot](https://netlify-cocoon.netlify.app/.netlify/functions/fetch?code=307&path=eyJzaXRlX2lkIjoiY2M1MjA4NDktZjNiZS00OGY0LWEzNTctYzgzYjU5M2I3ZTllIiwiZGVwbG95X2lkIjoiNjFjNWM2NmQ2MzllYTAwMDA4NmNlZTUyIiwiaWQiOiI2YjAyODUxZS1hNjNhLTRlYzMtOTIzMC02YzcwMjA2YzYwMTQifQ==)
 
 
 
 ## Live Demo
 
-[Live]()
+[Live](https://61c5c4b105433e00087b3390--space-traveler-hub-farouq.netlify.app/)
 
 ## Built With
 
